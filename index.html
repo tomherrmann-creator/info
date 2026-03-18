@@ -441,6 +441,18 @@
             background: rgba(171, 71, 188, .25);
         }
 
+        .badge.sightseeing {
+            background: rgba(255, 193, 7, .25);
+        }
+
+        .badge.segeln {
+            background: rgba(3, 169, 244, .25);
+        }
+
+        .badge.schnorcheln {
+            background: rgba(0, 188, 212, .3);
+        }
+
         .costs {
             display: flex;
             gap: 1rem;
@@ -897,12 +909,12 @@
                         <h3>🏙️ Bangkok</h3>
                         <div class="period">31.10. – 02.11.2026 · 3 Tage</div>
                         <div class="badges">
-                            <button class="badge muaythai" data-activity="muaythai" aria-label="Muay Thai Details">🥊
-                                Muay Thai</button>
-                            <button class="badge zipline" data-activity="zipline-bkk" aria-label="Zipline Details">🪂
-                                Rooftop-Zipline</button>
+                            <button class="badge sightseeing" data-activity="sightseeing-bkk"
+                                aria-label="Sightseeing Details">🏛️ Grand Palace & Wat Pho</button>
                             <button class="badge kajak" data-activity="kajak-bkk" aria-label="Kajak Details">🛶
                                 Nacht-Kajak</button>
+                            <button class="badge sightseeing" data-activity="chinatown-bkk"
+                                aria-label="Chinatown Details">🏮 Chinatown & Streetfood</button>
                         </div>
                         <div class="costs">
                             <span>🏨 40 €/Nacht</span>
@@ -914,6 +926,8 @@
                                     rel="noopener">22places Thailand Rundreise</a></li>
                             <li><a href="https://www.getyourguide.com/de-de/bangkok-l167/" target="_blank"
                                     rel="noopener">GetYourGuide Bangkok</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=bangkok+sightseeing+self+guided+walking+tour"
+                                    target="_blank" rel="noopener">🎬 YouTube: Bangkok self-guided</a></li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
@@ -926,13 +940,13 @@
                         <div class="period">03.11. – 09.11.2026 · 7 Tage</div>
                         <div class="badges">
                             <button class="badge trekking" data-activity="trek-cm" aria-label="Trekking Details">🥾
-                                Jungle-Trek</button>
-                            <button class="badge zipline" data-activity="zipline-cm" aria-label="Zipline Details">🪂
-                                Zipline</button>
+                                Jungle-Trek (2 Tage)</button>
+                            <button class="badge sightseeing" data-activity="doisuthep-cm"
+                                aria-label="Doi Suthep Details">🏛️ Doi Suthep self-guided</button>
+                            <button class="badge trekking" data-activity="inthanon-cm"
+                                aria-label="Doi Inthanon Details">🏔️ Doi Inthanon Wanderung</button>
                             <button class="badge rafting" data-activity="rafting-cm" aria-label="Rafting Details">🌊
                                 Whitewater Rafting</button>
-                            <button class="badge mountainbike" data-activity="mtb-cm"
-                                aria-label="Mountainbike Details">🚵 Mountainbike</button>
                         </div>
                         <div class="costs">
                             <span>🏨 45 €/Nacht</span>
@@ -942,10 +956,10 @@
                         <ul class="links-list">
                             <li><a href="https://www.getyourguide.com/en-gb/chiang-mai-l271/hiking-tc71/"
                                     target="_blank" rel="noopener">Chiang Mai Trekking – GetYourGuide</a></li>
-                            <li><a href="https://www.bonvoyagethailand.com/chiang-mai-tours/adventure-tours.html"
-                                    target="_blank" rel="noopener">Skyline Adventure (Zipline)</a></li>
                             <li><a href="https://www.klook.com/de/experiences/list/chiang-mai-hiking/c5-cate162/"
                                     target="_blank" rel="noopener">Klook Chiang Mai Wandern</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=chiang+mai+trekking+self+guided"
+                                    target="_blank" rel="noopener">🎬 YouTube: Chiang Mai Trekking</a></li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
@@ -954,15 +968,15 @@
                 <!-- 3. Krabi / Railay -->
                 <div class="timeline-item" id="station-krabi">
                     <div class="timeline-card">
-                        <h3>🧗 Phuket / Krabi / Railay</h3>
+                        <h3>⛵ Krabi / Railay / Phang Nga</h3>
                         <div class="period">10.11. – 15.11.2026 · 6 Tage</div>
                         <div class="badges">
-                            <button class="badge canyoning" data-activity="canyon-krabi"
-                                aria-label="Canyoning Details">🏞️ Canyoning</button>
-                            <button class="badge klettern" data-activity="climb-krabi" aria-label="Klettern Details">🧗
-                                Rock-Climbing</button>
-                            <button class="badge zipline" data-activity="zipline-krabi" aria-label="Zipline Details">🪂
-                                Zipline Patong</button>
+                            <button class="badge schnorcheln" data-activity="schnorchel-krabi"
+                                aria-label="Schnorcheln Details">🤿 Schnorcheln 4 Islands</button>
+                            <button class="badge segeln" data-activity="segeln-krabi" aria-label="Segeln Details">⛵
+                                Segeln Phang Nga Bay</button>
+                            <button class="badge sightseeing" data-activity="railay-krabi"
+                                aria-label="Railay Details">🏖️ Railay Beach self-guided</button>
                         </div>
                         <div class="costs">
                             <span>🏨 50 €/Nacht</span>
@@ -971,9 +985,11 @@
                         </div>
                         <ul class="links-list">
                             <li><a href="https://www.tripadvisor.de/Attractions-g1499981-Activities-c61-t273-Krabi_Province.html"
-                                    target="_blank" rel="noopener">Canyoning Krabi – TripAdvisor</a></li>
-                            <li><a href="https://www.getyourguide.com/de-de/thailand-l169040/zipline-abenteuer-tc91/"
-                                    target="_blank" rel="noopener">Zipline Thailand – GetYourGuide</a></li>
+                                    target="_blank" rel="noopener">Aktivitäten Krabi – TripAdvisor</a></li>
+                            <li><a href="https://www.getyourguide.com/de-de/krabi-l551/" target="_blank"
+                                    rel="noopener">Krabi Touren – GetYourGuide</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=krabi+phang+nga+segeln"
+                                    target="_blank" rel="noopener">🎬 YouTube: Segeln Phang Nga</a></li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
@@ -1017,8 +1033,10 @@
                         <div class="badges">
                             <button class="badge tauchen" data-activity="shark-phiphi"
                                 aria-label="Shark Point Details">🦈 Shark Point Tauchen</button>
-                            <button class="badge klettern" data-activity="cliff-phiphi"
-                                aria-label="Cliff Jumping Details">🏖️ Cliff-Jumping Maya Bay</button>
+                            <button class="badge schnorcheln" data-activity="schnorchel-phiphi"
+                                aria-label="Schnorcheln Details">🤿 Schnorcheln Maya Bay</button>
+                            <button class="badge sightseeing" data-activity="viewpoint-phiphi"
+                                aria-label="Viewpoint Details">🏝️ Viewpoint Hike self-guided</button>
                         </div>
                         <div class="costs">
                             <span>🏨 60 €/Nacht</span>
@@ -1033,24 +1051,31 @@
                     <div class="timeline-dot"></div>
                 </div>
 
-                <!-- 6. Bangkok Rückreise -->
+                <!-- 6. Ayutthaya & Bangkok Rückreise -->
                 <div class="timeline-item" id="station-bangkok2">
                     <div class="timeline-card">
-                        <h3>🥊 Bangkok – Finale</h3>
+                        <h3>🏛️ Ayutthaya & Bangkok</h3>
                         <div class="period">24.11. – 27.11.2026 · 4 Tage</div>
                         <div class="badges">
+                            <button class="badge sightseeing" data-activity="ayutthaya"
+                                aria-label="Ayutthaya Details">🏛️ Ayutthaya Tempelruinen</button>
                             <button class="badge trekking" data-activity="riverkwai" aria-label="River Kwai Details">🌉
-                                River Kwai Abenteuer</button>
-                            <button class="badge muaythai" data-activity="sparring"
-                                aria-label="Muay Thai Sparring Details">🥊 Muay-Thai-Sparring</button>
+                                River Kwai Tagesausflug</button>
+                            <button class="badge sightseeing" data-activity="floating-bkk"
+                                aria-label="Floating Market Details">🛶 Schwimmender Markt</button>
                         </div>
                         <div class="costs">
                             <span>🏨 50 €/Nacht</span>
+                            <span>🚂 Zug Ayutthaya 3 €/P</span>
                             <span>✈️ Rückflug 20 €/P</span>
                         </div>
                         <ul class="links-list">
                             <li><a href="https://www.22places.de/thailand-rundreise/" target="_blank"
                                     rel="noopener">22places Thailand Rundreise</a></li>
+                            <li><a href="https://www.getyourguide.com/de-de/ayutthaya-l553/" target="_blank"
+                                    rel="noopener">Ayutthaya Touren – GetYourGuide</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=ayutthaya+self+guided+bike+tour"
+                                    target="_blank" rel="noopener">🎬 YouTube: Ayutthaya per Fahrrad</a></li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
@@ -1120,18 +1145,20 @@
                         target="_blank" rel="noopener" class="highlight-link">Tour ansehen</a>
                 </div>
                 <div class="highlight-card">
-                    <div class="highlight-icon">🏖️</div>
-                    <h4>Cliff-Jumping Maya Bay</h4>
-                    <p>Sprung von den ikonischen Felsen der Maya Bay auf Koh Phi Phi – purer Adrenalinrausch.</p>
-                    <a href="https://www.tripadvisor.ch/AttractionProductReview-g293920-d11464587-Try_Diving_in_the_beautiful_Andaman_Sea-Phuket.html"
-                        target="_blank" rel="noopener" class="highlight-link">Infos ansehen</a>
+                    <div class="highlight-icon">⛵</div>
+                    <h4>Segeln in der Phang Nga Bay</h4>
+                    <p>Mit eigenem Segelschein über die Andamanensee – vorbei an Karstfelsen und einsamen Inseln bei
+                        Krabi.</p>
+                    <a href="https://www.getyourguide.com/de-de/krabi-l551/" target="_blank" rel="noopener"
+                        class="highlight-link">Tour ansehen</a>
                 </div>
                 <div class="highlight-card">
-                    <div class="highlight-icon">🪂</div>
-                    <h4>Zipline Skyline Jungle Luge</h4>
-                    <p>Über den Baumwipfeln von Chiang Mai – eine der spektakulärsten Zipline-Strecken Asiens.</p>
-                    <a href="https://www.bonvoyagethailand.com/chiang-mai-tours/adventure-tours.html" target="_blank"
-                        rel="noopener" class="highlight-link">Jetzt buchen</a>
+                    <div class="highlight-icon">🤿</div>
+                    <h4>Schnorcheln Maya Bay</h4>
+                    <p>Die berühmte Maya Bay auf Koh Phi Phi – türkises Wasser, bunte Korallen und tropische Fische
+                        direkt vom Strand.</p>
+                    <a href="https://www.getyourguide.com/de-de/ko-phi-phi-don-l3395/" target="_blank" rel="noopener"
+                        class="highlight-link">Infos ansehen</a>
                 </div>
                 <div class="highlight-card">
                     <div class="highlight-icon">🌉</div>
@@ -1140,6 +1167,14 @@
                     </p>
                     <a href="https://www.22places.de/thailand-rundreise/" target="_blank" rel="noopener"
                         class="highlight-link">Mehr erfahren</a>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏛️</div>
+                    <h4>Ayutthaya per Fahrrad</h4>
+                    <p>Self-guided Radtour durch die UNESCO-Tempelruinen der alten Königsstadt – nur 2 Std. von Bangkok.
+                    </p>
+                    <a href="https://www.getyourguide.com/de-de/ayutthaya-l553/" target="_blank" rel="noopener"
+                        class="highlight-link">Tour ansehen</a>
                 </div>
             </div>
         </section>
@@ -1280,6 +1315,8 @@
             <p class="claim">29 Tage. 2 Abenteurer. Unendlich Thailand.</p>
             <p style="margin-top:2rem; font-size:.8rem; color:var(--text-muted);">
                 Nützliche Links:
+                <a href="https://www.22places.de/thailand-rundreise/#thailand-route-fuer-4-wochen" target="_blank"
+                    rel="noopener">22places 4-Wochen-Route</a> ·
                 <a href="https://ferndurst.de/thailand-kosten-3-wochen/" target="_blank" rel="noopener">Budget-Guide</a>
                 ·
                 <a href="https://faszination-suedostasien.de/thailand-inlandsfluege/" target="_blank"
@@ -1288,6 +1325,17 @@
                     rel="noopener">Inselhopping</a> ·
                 <a href="https://rausumdiewelt.de/fortbewegung-in-thailand/" target="_blank"
                     rel="noopener">Transport-Guide</a>
+            </p>
+            <p style="margin-top:.8rem; font-size:.8rem; color:var(--text-muted);">
+                🎬 YouTube-Inspiration:
+                <a href="https://www.youtube.com/results?search_query=thailand+4+wochen+rundreise+2024" target="_blank"
+                    rel="noopener">Thailand Rundreise</a> ·
+                <a href="https://www.youtube.com/results?search_query=thailand+tauchen+andaman+sea" target="_blank"
+                    rel="noopener">Tauchen Andamanensee</a> ·
+                <a href="https://www.youtube.com/results?search_query=ayutthaya+fahrrad+tour" target="_blank"
+                    rel="noopener">Ayutthaya Fahrrad</a> ·
+                <a href="https://www.youtube.com/results?search_query=phang+nga+bay+sailing" target="_blank"
+                    rel="noopener">Segeln Phang Nga</a>
             </p>
         </footer>
 
@@ -1349,12 +1397,12 @@
             /* ===== LEAFLET KARTE ===== */
             var map;
             var stations = [
-                { name: 'Bangkok', lat: 13.7563, lng: 100.5018, dates: '31.10. – 02.11.', activities: ['🥊 Muay Thai', '🪂 Rooftop-Zipline', '🛶 Nacht-Kajak'], target: 'station-bangkok' },
-                { name: 'Chiang Mai', lat: 18.7883, lng: 98.9853, dates: '03.11. – 09.11.', activities: ['🥾 Jungle-Trek', '🪂 Zipline', '🌊 Rafting'], target: 'station-chiangmai' },
-                { name: 'Krabi / Railay', lat: 8.0863, lng: 98.9063, dates: '10.11. – 15.11.', activities: ['🏞️ Canyoning', '🧗 Rock-Climbing', '🪂 Zipline'], target: 'station-krabi' },
+                { name: 'Bangkok', lat: 13.7563, lng: 100.5018, dates: '31.10. – 02.11.', activities: ['🏛️ Grand Palace & Wat Pho', '🛶 Nacht-Kajak', '🏮 Chinatown Streetfood'], target: 'station-bangkok' },
+                { name: 'Chiang Mai', lat: 18.7883, lng: 98.9853, dates: '03.11. – 09.11.', activities: ['🥾 Jungle-Trek (2 Tage)', '🏛️ Doi Suthep self-guided', '🏔️ Doi Inthanon Wanderung'], target: 'station-chiangmai' },
+                { name: 'Krabi / Phang Nga', lat: 8.0863, lng: 98.9063, dates: '10.11. – 15.11.', activities: ['🤿 Schnorcheln 4 Islands', '⛵ Segeln Phang Nga', '🏖️ Railay Beach'], target: 'station-krabi' },
                 { name: 'Koh Lanta', lat: 7.5833, lng: 99.0333, dates: '16.11. – 20.11.', activities: ['🤿 Hin Daeng Tauchen', '🌙 Nachttauchgang', '🛶 Mangroven-Kajak'], target: 'station-kohlanta' },
-                { name: 'Koh Phi Phi', lat: 7.7407, lng: 98.7784, dates: '21.11. – 23.11.', activities: ['🦈 Shark Point', '🏖️ Cliff-Jumping'], target: 'station-phiphi' },
-                { name: 'Bangkok (Rückreise)', lat: 13.7563, lng: 100.5218, dates: '24.11. – 27.11.', activities: ['🌉 River Kwai', '🥊 Muay-Thai-Sparring'], target: 'station-bangkok2' }
+                { name: 'Koh Phi Phi', lat: 7.7407, lng: 98.7784, dates: '21.11. – 23.11.', activities: ['🦈 Shark Point Tauchen', '🤿 Schnorcheln Maya Bay', '🏝️ Viewpoint Hike'], target: 'station-phiphi' },
+                { name: 'Ayutthaya & Bangkok', lat: 14.3532, lng: 100.5689, dates: '24.11. – 27.11.', activities: ['🏛️ Ayutthaya Tempel', '🌉 River Kwai', '🛶 Schwimmender Markt'], target: 'station-bangkok2' }
             ];
 
             function initMap() {
@@ -1447,23 +1495,25 @@
 
             /* ===== AKTIVITÄTS-MODAL ===== */
             var activityData = {
-                'muaythai': { title: '🥊 Muay Thai Training', desc: 'Traditionelles Thai-Boxen in einem lokalen Gym in Bangkok. Ideal für Anfänger – 2-stündige Sessions mit erfahrenen Trainern.', link: 'https://www.getyourguide.com/de-de/bangkok-l167/' },
-                'zipline-bkk': { title: '🪂 Rooftop-Zipline (King Kong Parkour)', desc: 'Adrenalinkick über den Dächern von Bangkok – spektakuläre Zipline-Anlage mit Stadtblick.', link: 'https://www.getyourguide.com/de-de/bangkok-l167/' },
+                'sightseeing-bkk': { title: '🏛️ Grand Palace & Wat Pho', desc: 'Self-guided Tour durch Bangkoks beeindruckendste Tempel: Grand Palace, Smaragd-Buddha-Tempel und der liegende Buddha im Wat Pho. Früh morgens starten (8:30 Öffnung) um den Menschenmassen zu entgehen.', link: 'https://www.getyourguide.com/de-de/bangkok-l167/' },
+                'chinatown-bkk': { title: '🏮 Chinatown & Streetfood', desc: 'Bangkoks Chinatown (Yaowarat Road) am Abend: endlose Streetfood-Stände, Garkuchen und bunte Neonlichter. Self-guided – einfach treiben lassen und probieren!', link: 'https://www.getyourguide.com/de-de/bangkok-l167/' },
                 'kajak-bkk': { title: '🛶 Chao Phraya Nacht-Kajak', desc: 'Nächtliche Kajaktour auf dem Chao Phraya – vorbei an beleuchteten Tempeln und dem Grand Palace.', link: 'https://www.getyourguide.com/de-de/bangkok-l167/' },
-                'trek-cm': { title: '🥾 2-Tage Jungle-Trek', desc: '2-tägiger Trek durch den Dschungel bei Chiang Mai: Karen-Dorf, Wasserfälle, Elephant Sanctuary. Übernachtung im Dorf. 80 € p.P.', link: 'https://www.getyourguide.com/en-gb/chiang-mai-l271/hiking-tc71/' },
-                'zipline-cm': { title: '🪂 Skyline Jungle Luge Zipline', desc: 'Über 50 Plattformen und 1km Zipline durch die Baumwipfel nördlich von Chiang Mai. 90 € p.P.', link: 'https://www.bonvoyagethailand.com/chiang-mai-tours/adventure-tours.html' },
-                'rafting-cm': { title: '🌊 Whitewater Rafting', desc: 'Klasse-3-Wildwasser-Rafting auf dem Mae Taeng River. Halbtages-Tour inkl. Transport. 40 € p.P.', link: 'https://www.bonvoyagethailand.com/chiang-mai-tours/adventure-tours.html' },
-                'mtb-cm': { title: '🚵 Doi Inthanon Mountainbike', desc: 'Mountainbike-Tour rund um Thailands höchsten Berg – spektakuläre Trails durch Nebelwälder.', link: 'https://www.klook.com/de/experiences/list/chiang-mai-hiking/c5-cate162/' },
-                'canyon-krabi': { title: '🏞️ Canyoning Ao Thalane', desc: 'Abseilen, Klettern und Lagunen-Sprünge durch die Karstlandschaft bei Krabi. 60 € p.P.', link: 'https://www.tripadvisor.de/Attractions-g1499981-Activities-c61-t273-Krabi_Province.html' },
-                'climb-krabi': { title: '🧗 Railay Rock-Climbing', desc: 'Halbtages-Klettern an den legendären Kalksteinfelsen von Railay Beach. Perfekt für alle Level. 40 € p.P.', link: 'https://www.tripadvisor.de/Attractions-g1499981-Activities-c61-t273-Krabi_Province.html' },
-                'zipline-krabi': { title: '🪂 Zipline Patong Mountain', desc: 'Zipline-Parcours am Patong Mountain in Phuket – Dschungel-Panorama inklusive. 50 € p.P.', link: 'https://www.getyourguide.com/de-de/thailand-l169040/zipline-abenteuer-tc91/' },
+                'trek-cm': { title: '🥾 2-Tage Jungle-Trek', desc: '2-tägiger Trek durch den Dschungel bei Chiang Mai: Karen-Dorf, Wasserfälle, Elephant Sanctuary. Übernachtung im Dorf. 80 € p.P. Kleine Gruppen, erfahrene lokale Guides.', link: 'https://www.getyourguide.com/en-gb/chiang-mai-l271/hiking-tc71/' },
+                'doisuthep-cm': { title: '🏛️ Doi Suthep Tempel (self-guided)', desc: 'Self-guided Aufstieg zum goldenen Doi Suthep Tempel über die 309 Naga-Stufen. Panoramablick über Chiang Mai. Per Songthaew (30 THB) oder selbst hochwandern.', link: 'https://www.klook.com/de/experiences/list/chiang-mai-hiking/c5-cate162/' },
+                'inthanon-cm': { title: '🏔️ Doi Inthanon Wanderung', desc: 'Tageswanderung am höchsten Berg Thailands (2.565m): Nebelwälder, Wasserfälle und Königspagoden. Self-guided möglich über markierte Trails.', link: 'https://www.getyourguide.com/en-gb/chiang-mai-l271/hiking-tc71/' },
+                'rafting-cm': { title: '🌊 Whitewater Rafting', desc: 'Klasse-3-Wildwasser-Rafting auf dem Mae Taeng River. Halbtages-Tour inkl. Transport. 40 € p.P.', link: 'https://www.getyourguide.com/en-gb/chiang-mai-l271/' },
+                'schnorchel-krabi': { title: '🤿 Schnorcheln 4 Islands', desc: 'Ganztages-Schnorcheltour ab Krabi zu Koh Poda, Chicken Island, Tup Island & Phra Nang Cave. Türkises Wasser, bunte Korallenriffe. ~35 € p.P.', link: 'https://www.getyourguide.com/de-de/krabi-l551/' },
+                'segeln-krabi': { title: '⛵ Segeln Phang Nga Bay', desc: 'Mit eigenem Segelschein per Bareboat-Charter durch die Phang Nga Bay – Karstfelsen, James-Bond-Insel und einsame Buchten. Auch self-guided Tageschartern möglich.', link: 'https://www.getyourguide.com/de-de/krabi-l551/' },
+                'railay-krabi': { title: '🏖️ Railay Beach self-guided', desc: 'Self-guided Erkundung der Railay-Halbinsel: Phra Nang Cave Beach, Viewpoint-Wanderung durch den Dschungel, Princess Lagoon. Nur per Longtailboot erreichbar.', link: 'https://www.tripadvisor.de/Attractions-g1499981-Activities-c61-t273-Krabi_Province.html' },
                 'dive-lanta': { title: '🤿 Hin Daeng Tauchtage', desc: '4-Tage-Tauchpaket an den berühmten Hin Daeng Unterwasserwänden. Mantas, Leopardenhaie, 30m Sicht. 80 €/Tag p.P.', link: 'https://www.mein-reiseratgeber.de/asien/tauchen-thailand-november/' },
                 'nightdive-lanta': { title: '🌙 Nachttauchgang', desc: 'Einzigartiges Erlebnis: Tauchen bei Nacht vor Koh Lanta – biolumineszierende Kreaturen und nachtaktive Meeresbewohner.', link: 'https://www.khaolak-activities.com/post/tauchen-in-der-andamanensee-2026' },
-                'kajak-lanta': { title: '🛶 Mangroven-Kajak', desc: 'Kajakfahrt durch die Mangroven und Karstformationen von Koh Lanta – ruhig und spektakulär zugleich.', link: 'https://www.tripadvisor.de/Hotels-g303905-zff12-Ko_Lanta_Krabi_Province-Hotels.html' },
+                'kajak-lanta': { title: '🛶 Mangroven-Kajak', desc: 'Self-guided Kajakfahrt durch die Mangroven und Karstformationen von Koh Lanta – Kajaks leihen am Long Beach, eigene Route wählen.', link: 'https://www.tripadvisor.de/Hotels-g303905-zff12-Ko_Lanta_Krabi_Province-Hotels.html' },
                 'shark-phiphi': { title: '🦈 Shark Point Tauchen', desc: 'Tauchen am Shark Point vor Koh Phi Phi – Leopardenhaie, Seepferdchen und bunte Weichkorallen.', link: 'https://www.tripadvisor.ch/AttractionProductReview-g293920-d11464587-Try_Diving_in_the_beautiful_Andaman_Sea-Phuket.html' },
-                'cliff-phiphi': { title: '🏖️ Cliff-Jumping Maya Bay', desc: 'Sprung von den Felsen der weltberühmten Maya Bay – legendäre Kulisse, unvergesslicher Thrill.', link: 'https://www.tripadvisor.ch/AttractionProductReview-g293920-d11464587-Try_Diving_in_the_beautiful_Andaman_Sea-Phuket.html' },
-                'riverkwai': { title: '🌉 River Kwai Abenteuer', desc: 'Tagesausflug zum River Kwai: historische Zugfahrt über die Brücke, Dschungel-Trekking und Bamboo-Rafting.', link: 'https://www.22places.de/thailand-rundreise/' },
-                'sparring': { title: '🥊 Muay-Thai-Sparring', desc: 'Zum Abschluss der Reise: Sparring-Session in einem Muay-Thai-Camp in Bangkok – kämpfen wie die Profis.', link: 'https://www.getyourguide.com/de-de/bangkok-l167/' }
+                'schnorchel-phiphi': { title: '🤿 Schnorcheln Maya Bay', desc: 'Schnorcheln in der ikonischen Maya Bay – türkises Wasser, Korallengärten und tropische Fische. Self-guided per Longtailboot (200 THB Eintritt Maya Bay).', link: 'https://www.getyourguide.com/de-de/ko-phi-phi-don-l3395/' },
+                'viewpoint-phiphi': { title: '🏝️ Viewpoint Hike (self-guided)', desc: 'Self-guided Aufstieg zum berühmten Koh Phi Phi Viewpoint – 30 Minuten steil nach oben für einen der schönsten Inselblicke Thailands. Besonders zum Sonnenuntergang.', link: 'https://www.getyourguide.com/de-de/ko-phi-phi-don-l3395/' },
+                'ayutthaya': { title: '🏛️ Ayutthaya Tempelruinen (self-guided)', desc: 'Self-guided Fahrradtour durch die UNESCO-Weltkulturerbe-Tempelruinen der alten Königsstadt. Fahrrad leihen (50 THB/Tag), eigene Route durch Wat Mahathat, Wat Phra Si Sanphet & Wat Chaiwatthanaram.', link: 'https://www.getyourguide.com/de-de/ayutthaya-l553/' },
+                'riverkwai': { title: '🌉 River Kwai Tagesausflug', desc: 'Tagesausflug zum River Kwai: historische Zugfahrt über die Brücke, Erawan-Wasserfall (7 Stufen – self-guided Wanderung), Dschungel-Trekking.', link: 'https://www.22places.de/thailand-rundreise/' },
+                'floating-bkk': { title: '🛶 Schwimmender Markt', desc: 'Frühmorgendlicher Besuch des Damnoen Saduak oder Amphawa Floating Market. Amphawa (Wochenende) ist lokaler & weniger touristisch – self-guided per Minivan erreichbar.', link: 'https://www.getyourguide.com/de-de/bangkok-l167/' }
             };
 
             var modal = document.getElementById('modal-overlay');
